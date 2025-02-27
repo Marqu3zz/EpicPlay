@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #d3d3d3;
+    font-family: Arial, sans-serif; 
+}
+h1 {
+    color: white;
+}
+.game-container {
+    display: flex;
+    gap: 20px;
+}
+.game {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+.locked {
+    background-color: gray;
+    cursor: not-allowed;
+}
+.locked::before {
+    content: "\1F512"; /* Cadeado emoji */
+    font-size: 24px;
+    position: absolute;
+    color: black;
+}
