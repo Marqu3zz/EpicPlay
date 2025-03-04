@@ -1,11 +1,41 @@
+/* Reset CSS - Remove estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Remove estilos de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove estilos padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove estilos padrão de botões */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #d3d3d3;
-    font-family: Arial, sans-serif; 
+    background-color: #d3d3d3; 
 }
 h1 {
     color: white;

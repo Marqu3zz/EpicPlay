@@ -1,0 +1,89 @@
+/* Reset CSS - Remove estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Remove estilos de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove estilos padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove estilos padrão de botões */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;
+}
+
+.container .principal {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .principal h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container .principal button {
+    margin-top: 10px;
+    background-color: white;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 25px;
+    width: 50%;
+}
+
+.container .principal .inputs label {
+    font-size: 20px;
+    color: white;
+}
+
+.container .principal .inputs input {
+    width: 100%; 
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 10px;
+}
+
+.container .principal .inputs .eye-icon {
+    position: absolute;
+    top: 61%;
+    right: 42%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
