@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ppt.css">
-    <title>Document</title>
+    <script src="ppt.js"></script>
+    <title>Jogo - Pedra, Papel, Tesoura</title>
 </head>
 <body>
+    <div class="container">
+        <!-- Timer -->
+        <div class="timer-container">
+            <span id="timer">0:10</span>
+        </div>
+
+        <!-- Resultado -->
+        <div class="result-container" id="result">
+            <div class="choices">
+                <div class="choice" id="playerIcon">❓</div>
+                <div class="choice" id="machineIcon">❓</div>
+            </div>
+            <div class="winner-message" id="winnerMessage"></div>
+        </div>
+
+        <!-- Botões -->
+        <div class="buttons-container">
+            <button class="choice-btn" onclick="escolher('👊')">👊 Pedra</button>
+            <button class="choice-btn" onclick="escolher('✌')">✌ Tesoura</button>
+            <button class="choice-btn" onclick="escolher('🖐')">🖐 Papel</button>
+        </div>
+    </div>
 
 </body>
 </html>

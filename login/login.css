@@ -80,8 +80,8 @@ button {
 
 .container .principal .inputs .eye-icon {
     position: absolute;
-    top: 61%;
-    right: 42%;
+    top: 59.7%;
+    right: 43%;
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 18px;

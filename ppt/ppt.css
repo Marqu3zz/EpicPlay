@@ -13,5 +13,155 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+
+}
+
+/* Timer */
+.timer-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#timer {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Botões */
+.buttons-container {
+    position: fixed;
+    bottom: 20px; /* Distância do rodapé */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    z-index: 100; /* Garante que os botões fiquem acima de outros elementos */
+}
+.choice-btn {
+    font-size: 24px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(99, 99, 99);
+    color: white;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.choice-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* Resultado */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.choices {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.choice {
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Mensagem do vencedor */
+.winner-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #5e5e5e;
+    border-radius: 10px;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+    .timer-container {
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+
+    .choice-btn {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+
+    .buttons-container {
+        align-items: center;
+    }
+
+    .choices {
+        gap: 15px;
+    }
+
+    .choice {
+        font-size: 60px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .winner-message {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer-container {
+        padding: 8px 15px;
+    }
+
+    .choice-btn {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+    .choice {
+        font-size: 50px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .winner-message {
+        font-size: 18px;
+    }
 }
