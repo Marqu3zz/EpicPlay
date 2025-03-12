@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script> 
+    <script src="index.js"></script>
     <title>Epic Play - Escolha um Jogo</title>
 </head>
 <body>
-    <h1>EPIC PLAY</h1>
-    <div class="game-container">
-        <div class="game" onclick="playGame('./ppt/ppt.html')">PPT</div>
+    <h1 style="margin-bottom: 20px">EPIC PLAY</h1>
+    <div style="width: 500px; height: 150px" class="game-container">
+        <div class="game" onclick="playGame('./ppt/ppt.html')">
+            <img src="images/PPT_icone.png" width="100%" height="100%" alt="Icone de Jogo"">
+        </div>
         <div class="game locked" id="game2"> </div>
         <div class="game locked" id="game3"> </div>
     </div>
